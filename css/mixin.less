@@ -1,0 +1,97 @@
+//LESS VARIABLES
+@nav_color : #3c3c3c;
+@h_color : #eeeeee;
+@product_w : 320px;
+
+//LESS FUNCTIONS
+.transition(@transition)
+{
+	-webkit-transition:@transition;
+	-moz-transition:@transition;
+	-o-transition:@transition;
+	transition:@transition;
+}
+.rounded(@rounded)
+{
+	-moz-border-radius:@rounded;
+	-wekit-border-radius:@rounded;
+	-o-border-radius:@rounded;
+	border-radius:@rounded;	
+}
+.button_gradient(){
+background: #ffa84c; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmYTg0YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjdiMGQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  #ffa84c 0%, #ff7b0d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa84c), color-stop(100%,#ff7b0d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* IE10+ */
+background: linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* W3C */
+}
+.shadow(@shadow)
+{
+	-moz-box-shadow:@shadow;
+	-webkit-box-shadow: @shadow;
+	-o-box-shadow:@shadow;	
+	box-shadow:@shadow;	
+}
+.red(){
+	background-color:red;
+}
+.text_shadow(@shadow)
+{
+	text-shadow:@shadow;
+}
+.transition_background(@transition)
+{
+	-webkit-transition:background-position @trasition;
+	-moz-transition:background-position @trasition;
+	-o-transition:background-position @trasition;
+	transition:background-position @trasition;
+}
+.i(){
+	width:@product_w;
+	height:250px;
+	margin-right:20px;
+	margin-bottom:40px;
+	float:left;
+		.i_img{
+			height:90px;
+			width:90px;
+			display:block;
+			float:left;
+			margin-right:10px;
+									
+					
+					
+		}
+		.payment{
+		background-image:url(img/gallery_sprites.png);
+		background-position:3px -649px;
+				}
+		.cash{
+		background-image:url(img/gallery_sprites.png);
+		background-position:-80px -649px;
+				}
+		.prepaid{
+		background-image:url(img/gallery_sprites.png);
+		background-position:-175px -649px;
+		}
+		.commerce{
+		background-image:url(img/gallery_sprites.png);
+		background-position:-260px -649px;
+		}
+}
+.p_img{
+
+		height:90px;
+		width:90px;
+		display:block;
+		float:left;
+		margin-top:5px;
+		margin-right:10px;
+		background-image:url(img/gallery_sprites.png);
+		background-position:3px -730px;
+									
+}
